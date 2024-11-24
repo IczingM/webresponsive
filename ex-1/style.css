@@ -1,1 +1,85 @@
-/* Start coding here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+h1 span {
+    color: black;
+    background-color: orange;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.job-categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.job-card, .explore-card {
+    background-color:white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    text-align: left;
+    flex: 1 1 calc(30% - 20px);
+    max-width: calc(30% - 20px);
+}
+
+.job-card .icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.job-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.explore-card {
+    background: linear-gradient(45deg, #ff5733, #ff8b33);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    flex: 1 1 calc(30% - 20px);
+    max-width: calc(30% - 20px);
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+@media only screen and (max-width: 600px) {
+   .job-card, .explore-card {
+    flex: 1 1 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+   }
+}
+
+h1 {
+    font-size: 32px;
+}
